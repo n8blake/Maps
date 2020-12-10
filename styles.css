@@ -22,4 +22,45 @@ body {
 	bottom: 0px;
 }
 
+.map-thumbnail {
+	max-height: 250px;
+	max-width: 250px;
+	border-radius: 6px;
+	border-style: solid;
+	margin-bottom: 10px;
+	border-color: #4445; 
+	border-width: 1px; 
+	border-top-color: #7775; 
+	border-left-color: #7775;
+	cursor: pointer;
+}
 
+.alternate-image-color {
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 12px;
+	margin-top: 12px;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #EEE3;
+	cursor: pointer;
+}
+
+.alternate-selected {
+	border-color: #333;
+}
+
+.original {
+	background-color: #01917a;
+}
+
+.rose {
+	background-color: #ad496d;
+}
+
+.orange {
+	background-color: #cb5730;
+}
