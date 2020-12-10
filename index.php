@@ -15,10 +15,18 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
 </head>
 <body>
-	<?php 
+	<div class="container bg-cream" id="main-container">
 
-	echo "Hello Maps!";
+		<h1 class="p-4" style="font-weight: lighter;">maps</h1>
 
-	?>
+		<hr>
+		<p class="text-muted p-2">
+			This is a project for my maps.
+		</p>
+		<hr>
+
+
+	</div>
+
 </body>
 </html>
