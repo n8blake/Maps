@@ -51,6 +51,7 @@ body {
 
 .alternate-selected {
 	border-color: #333;
+	border-width: 2px;
 }
 
 .original {

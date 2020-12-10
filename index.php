@@ -29,11 +29,12 @@
 
 		<div class="row" style="text-align: center;">
 			<div class="col-lg-4 align-middle" data-ng-repeat="map in maps">
-				<img class="map-thumbnail" ng-src="maps/{{map.image_base}}_500.jpg"  ng-attr-id="{{map.name}}-tb" ng-click="preview(map)">
+				<img class="map-thumbnail" ng-src="{{getImageSrc(map)}}"  ng-attr-id="{{map.name}}-tb" ng-click="preview(map)">
 				<div ng-if="map.alternates" class="d-flex justify-content-center">
 					<span ng-repeat="alt in map.alternates"
 					class="alternate-image-color " ng-class="
-					{'original' : (alt == 'original'), 'rose' : (alt == 'rose'), 'orange' : (alt == 'orange'),}" 
+					{'original' : (alt == 'original'), 'rose' : (alt == 'rose'), 'orange' : (alt == 'orange'), 'alternate-selected' : (map.activeAlt == alt)}" 
+					ng-click="setAlt(map, alt)"
 					> </span>
 				</div>
 				<p class="align-middle">{{map.name | uppercase}}</p>
